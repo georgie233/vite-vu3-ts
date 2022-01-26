@@ -1,0 +1,37 @@
+{
+  "name": "vite-vue3-ts",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "clipboard": "^2.0.8",
+    "date-fns": "^2.28.0",
+    "dayjs": "^1.10.7",
+    "highlight.js": "^11.4.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.9",
+    "viser-vue": "^2.4.8",
+    "vue": "^3.2.25",
+    "vue-router": "^3.5.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.7.0",
+    "eslint-plugin-vue": "^8.3.0",
+    "postcss": "^8.4.5",
+    "sass": "^1.49.0",
+    "typescript": "^4.4.4",
+    "unplugin-auto-import": "^0.5.11",
+    "unplugin-vue-components": "^0.17.14",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}
