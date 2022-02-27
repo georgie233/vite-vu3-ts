@@ -1,28 +1,31 @@
 {
   "env": {
     "browser": true,
-    "node": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:vue/essential",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": "latest",
-    "parser": "@typescript-eslint/parser",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "vue",
-    "@typescript-eslint"
-  ],
-  "ignorePatterns": [
-    "types/env.d.ts",
-    "node_modules/**",
-    "**/dist/**"
-  ],
+  "ignorePatterns": ["node_modules/**/*", "build/**/*", "dist/**/*"],
+  "plugins": ["react"],
   "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "no-undef": 0,
+    "no-unused-vars": 0,
+    "no-debugger": 0,
+    "react/display-name": 0
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "version": "detect"
+    }
   }
 }
